@@ -1,0 +1,10 @@
+- name: Change line in workers-vmx file
+  lineinfile:
+      path: "{{ vmx_path }}/{{ datastore }}/{{ item.worker }}/{{ item.worker_vmx }}.vmx"
+      line: scsi1.sharedBus = "physical"
+      state: present
+  with_items:
+      - { worker: "{{ worker1 }}", worker_vmx: "{{ worker1 }}" }
+      - { worker: "{{ worker2 }}", worker_vmx: "{{ worker2 }}" }
+      - { worker: "{{ worker3 }}", worker_vmx: "{{ worker3 }}" }
+  when: inventory_hostname in groups ['esxi']

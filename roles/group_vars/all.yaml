@@ -1,0 +1,9 @@
+---
+  vcenter_hostname: "192.168.78.30"
+  vcenter_username: "administrator@vsphere.local"
+  vcenter_password: "@dm!nsiN@m2o20"
+  worker1: testworker01
+  worker2: testworker02
+  worker3: testworker03
+  vmx_path: /vmfs/volumes/
+  datastore: datastore01
