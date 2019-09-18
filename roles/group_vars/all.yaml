@@ -1,7 +1,7 @@
 ---
-  vcenter_hostname: "192.168.78.30"
+  vcenter_hostname: "1.1.1.1"
   vcenter_username: "administrator@vsphere.local"
-  vcenter_password: "@dm!nsiN@m2o20"
+  vcenter_password: "password"
   worker1: testworker01
   worker2: testworker02
   worker3: testworker03
