@@ -1,4 +1,4 @@
 [vcenter]
-192.168.78.30
+1.1.1.1
 [esxi]
-192.168.78.113 ansible_connection=ssh ansible_user=root ansible_ssh_pass=powerpc
+1.1.1.10 ansible_connection=ssh ansible_user=root ansible_ssh_pass=powerpc
